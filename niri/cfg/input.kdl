@@ -2,25 +2,44 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
 input {
+
+    // Keyboard settings
     keyboard {
         xkb {
-            layout "us" // Use the American keyboard layout
+
+            // Use standard US keyboard layout
+            // Best for coding, terminal, and general usage
+            layout "us"
         }
-        numlock // Enable numlock on startup
+
+        // Enable numlock automatically on startup
+        numlock
     }
 
+    // Touchpad settings
     touchpad {
-        tap // Enable tap-to-click
-        natural-scroll // Enable natural (macOS-style) scrolling
+
+        // Tap touchpad to click
+        tap
+
+        // macOS-style scrolling
+        // Swipe down = page goes down
+        natural-scroll
     }
 
+    // Mouse settings
     mouse {
-        // If you want to disable Mouse Acceleration,
-        // uncomment the lines below.
-        //accel-profile "flat"
-        //accel-speed 0.0
+
+        // Disable aggressive mouse acceleration
+        accel-profile "flat"
+
+        // Slightly slower mouse movement
+        accel-speed -0
     }
 
-    focus-follows-mouse // Automatically focus windows under the mouse pointer
-    workspace-auto-back-and-forth // Enable workspace back & forth switching
+    // Focus window when mouse hovers over it
+    focus-follows-mouse
+
+    // Automatically return to previous workspace
+    workspace-auto-back-and-forth
 }
