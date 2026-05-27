@@ -123,7 +123,7 @@ binds {
     Mod+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    CTRL+Shift+C                        { screenshot; }
+    CTRL+Shift+C                        { spawn "~/.config/niri/scripts/screenshot.sh"; }
     CTRL+Shift+2                        { screenshot-screen; }
     CTRL+Shift+3                        { screenshot-window; }
 
