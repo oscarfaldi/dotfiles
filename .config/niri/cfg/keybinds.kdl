@@ -122,9 +122,9 @@ binds {
     Mod+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    CTRL+Shift+1                        { screenshot; }
-    CTRL+Shift+2                        { screenshot-screen; }
-    CTRL+Shift+3                        { screenshot-window; }
+    CTRL+Shift+1                        { spawn "sh" "-c" "grimshot --notify save area \"$HOME/Pictures/Screenshots/$(date +%Y-%m)/screenshot_$(date +%d%H%M%S).png\""; }
+    CTRL+Shift+2                        { spawn "sh" "-c" "grimshot --notify save output \"$HOME/Pictures/Screenshots/$(date +%Y-%m)/screenshot_$(date +%d%H%M%S).png\""; }
+    CTRL+Shift+3                        { spawn "sh" "-c" "grimshot --notify save window \"$HOME/Pictures/Screenshots/$(date +%Y-%m)/screenshot_$(date +%d%H%M%S).png\""; }
 
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
