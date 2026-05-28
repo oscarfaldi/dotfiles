@@ -9,9 +9,6 @@
         QT_QPA_PLATFORM "wayland"
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 
-        // Force GTK apps (Thunar, Pavucontrol) to run natively on Wayland instead of XWayland fallback
-        GDK_BACKEND "wayland"
-
         // Define the session identity so D-Bus services and portals correctly recognize Niri
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
